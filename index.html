@@ -5,6 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lolgy222 - Portfolio</title>
     <style>
+        
+        body.night-mode {
+            background-color: #121212; /* Dark background */
+            color: #eee; /* Light text color */
+        }
+
+        body.night-mode header,
+        body.night-mode nav,
+        body.night-mode section,
+        body.night-mode footer {
+            background-color: #222; /* Slightly lighter background for sections */
+            box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Subtle shadow */
+        }
+
+        body.night-mode nav a {
+            color: #ddd; /* Lighter link color */
+        }
+
+        body.night-mode .project {
+            border-bottom-color: #444; /* Darker border for projects */
+        }
+
+        /* Style the image in night mode if needed (example) */
+        body.night-mode .profile-image {
+            /* Add any specific styles for the image in night mode */
+            filter: brightness(0.9); /* Example: Slightly reduce brightness */
+        }
+
+        /* Optional: Add a toggle button */
+        #night-mode-toggle {
+            position: fixed; /* Or wherever you want it */
+            top: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
         body {
             font-family: sans-serif;
             margin: 0;
